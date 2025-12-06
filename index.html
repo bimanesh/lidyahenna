@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta charset="UTF-8">
+  <title>Lidyahenna Art</title>
+
+  
+  
+  <style>
+body {
+margin: 0;
+padding: 0;
+background: #f7ede2;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+/* Banner */
+.banner {
+width: 100%;
+max-width: 900px;
+display: block;
+margin: 0 auto;
+}
+
+/* MENU HORIZONTAL */
+.menu {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+margin: 20px auto;
+max-width: 900px;
+padding: 10px 0;
+}
+
+.menu img {
+width: 300px;
+height: 100px;
+transition: 0.2s;
+}
+
+.menu img:hover {
+transform: scale(1.08);
+}
+
+/* Gallery / Sertifikat */
+.gallery {
+max-width: 900px;
+margin: 20px auto;
+padding: 10px;
+}
+
+.gallery img {
+width: 90%;
+max-width: 350px;
+margin: 15px;
+border-radius: 10px;
+}
+
+/* Gallery / Sample */
+.gallery {
+max-width: 900px;
+max-height: 1000;
+margin: 20px auto;
+padding: 10px;
+}
+
+.gallery img {
+width: 90%;
+height: 60%;
+max-width: 350px;
+max-height: 500;
+margin: 15px;
+border-radius: 10px;
+}
+
+
+/* Footer */
+#footer {
+background: #f5e1f3;
+color: #333;
+padding: 20px;
+margin-top: 40px;
+border-top: 2px solid #d6a4c7;
+font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+.menu img {
+width: 120px;
+}
+
+.gallery img {
+width: 100%;
+max-width: 300px;
+}
+}
+  </style>
+  
+  <style>
+/* SLIDER WRAPPER */
+.slider-container {
+max-width: 900px;
+margin: 20px auto;
+position: relative;
+overflow: hidden;
+border-radius: 15px;
+}
+
+/* SLIDER TRACK */
+.slider-track {
+display: flex;
+transition: transform 0.4s ease;
+}
+
+/* SLIDE */
+.slide {
+min-width: 50%;
+box-sizing: border-box;
+}
+
+.slide img {
+width: 70%;
+border-radius: 15px;
+}
+
+/* BUTTON */
+.slider-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(255,255,255,0.8);
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 8px;
+font-size: 18px;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+
+.slider-btn:hover {
+background: white;
+}
+  </style>
+</head><body>
+<!-- Banner -->
+<img class="banner" src="images/banner.png" alt="Banner"><!-- MENU HORIZONTAL -->
+<div class="menu"> <a href="index.html"><img src="images/home.png" alt="Home"></a> <a href="gallery.html"><img src="images/gallery.png" alt="Gallery"></a> <a href="about.html"><img src="images/about.png" alt="About"></a> <a href="contact.html"><img alt="Contact" src="images/contact.png"></a></div>
+
+<hr style="width: 90%;">
+<div style="margin: 20px auto; padding: 25px; background: rgb(247, 237, 226) none repeat scroll 0% 50%; max-width: 900px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: center;">
+<div style="margin-left: 40px;"><big><big><big><big><span style="font-weight: bold;">Lidyahenna
+&amp; Fakenails Extension Bukit Kemuning</span><br>
+<br>
+&nbsp;adalah layanan profesional
+henna wedding, henna art, dan fakenails di Lampung Utara sejak 2021.
+Kami menghadirkan desain henna yang rapi dan elegan serta nail art
+modern untuk mempercantik momen spesial Anda. Melayani area Bukit
+Kemuning, Tanjung Raja, Way Kanan, dan Ogan 5 di Lampung Utara dengan
+hasil bersih, detail, dan berkualitas. <br>
+</big></big></big></big></div>
+<br>
+<div class="slider-container"> <button id="prevBtn" class="slider-btn">❮</button>
+<div class="slider-track" id="sliderTrack"><!-- AMBIL GAMBAR DARI HALAMAN GALLERY -->
+<div class="slide"><img src="images/sample%201.jpg"></div>
+<div class="slide"><img src="images/sample%202.jpg"></div>
+<div class="slide"><img src="images/sample%203.jpg"></div>
+<div class="slide"><img src="images/sample%2010.jpg"></div>
+<div class="slide"><img src="images/sample%2013.jpg"></div>
+<div class="slide"><img src="images/sample%2014.jpg"></div>
+<div class="slide"><img src="images/sample%2011.jpg"></div>
+<div class="slide"><img src="images/sample%208.jpg"></div>
+<div class="slide"><img src="images/sample%209.jpg"></div>
+<div class="slide"><img src="images/sample%204.jpg"></div>
+<div class="slide"><img src="images/sample%206.jpg"></div>
+<div class="slide"><img src="images/sample%207.jpg"></div>
+</div>
+<button id="nextBtn" class="slider-btn">❯</button>
+</div>
+<!-- Gallery / Sample -->
+<div id="gallery" class="gallery"><big><big><big><br>
+view more on</big><big> <a href="gallery.html">Gallery</a><br>
+<br>
+<br>
+</big></big></big></div>
+<!-- Gallery / Sertifikat -->
+<div id="gallery" class="gallery"> <img src="images/cert1.jpg" alt=""><img src="images/cert2.jpg" alt=""> <img src="images/cert3.jpg" alt=""><img src="images/cert4.jpg" alt=""></div>
+<!-- Footer -->
+<div id="footer">© 2025 Lidyahenna Art – All Rights Reserved</div>
+<script>
+let track = document.getElementById('sliderTrack');
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+function showSlide(i) {
+if (i < 0) { index = slides.length - 1; }
+else if (i >= slides.length) { index = 0; }
+track.style.transform = "translateX(" + (-index * 100) + "%)";
+}
+
+document.getElementById('nextBtn').onclick = function() {
+index++;
+showSlide(index);
+}
+
+document.getElementById('prevBtn').onclick = function() {
+index--;
+showSlide(index);
+}
+</script>
+</div>
+
+</body></html>
